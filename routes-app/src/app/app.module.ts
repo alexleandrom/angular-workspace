@@ -4,7 +4,8 @@ import {AppComponent} from "./app.component";
 import {LoginComponent} from "./login/login.component";
 import {HomeComponent} from "./home/home.component";
 import {AppRoutingModule} from "./app.routing.module";
-import {CursosModule} from "./cursos/cursos.module";
+import {AlunoModule} from "./aluno/aluno.module";
+import {CursoModule} from "./curso/curso.module";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {CursosModule} from "./cursos/cursos.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CursosModule
+    CursoModule,
+    AlunoModule
   ],
   bootstrap: [AppComponent]
 })

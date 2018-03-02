@@ -1,7 +1,0 @@
-<h3>Cursos</h3>
-<p>Pagina: {{pagina}}</p>
-<ul>
-  <li *ngFor="let curso of cursos">
-    <a [routerLink]="['/cursos', curso.id]">{{curso.name}}</a>
-  </li>
-</ul>

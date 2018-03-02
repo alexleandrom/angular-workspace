@@ -26,3 +26,28 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Criação de Module na Raiz
+  *Observação utilizar os nomes sempre no SINGULAR
+	->Criação do Module 
+		ng g m NomeModule
+	->Criação do Component Inicial do Module 
+		ng g c NomeModule
+	->Criaçao do Routing Modeule
+	
+	->Criação dos Components que irão compor o Module
+		ng g c NomeModule-NomeModule
+		
+Exemplo:
+/aluno/
+    aluno.routing.module.ts
+    aluno.module.ts
+    aluno.component.ts
+    aluno.component.html
+    /aluno-form/
+        aluno-form.component.ts
+        aluno-form.component.html
+    /aluno-table/
+        aluno-table.component.ts
+        aluno-table.component.html
