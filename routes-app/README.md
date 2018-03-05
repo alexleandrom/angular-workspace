@@ -29,16 +29,20 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Criação de Module na Raiz
-  *Observação utilizar os nomes sempre no SINGULAR
-	->Criação do Module 
-		ng g m NomeModule
-	->Criação do Component Inicial do Module 
-		ng g c NomeModule
-	->Criaçao do Routing Modeule
-	
-	->Criação dos Components que irão compor o Module
-		ng g c NomeModule-NomeModule
-		
+***Observação utilizar os nomes sempre no SINGULAR**
+
+### Criação do Module 
+ng g m NomeModule
+### Criação do Component Inicial do Module 
+ng g c NomeModule
+### Criaçao do Routing Module
+ng g m NomeModuleRouting
+
+### Criação dos Components que irão compor o Module
+ng g c NomeModule-NomeModule
+
+### Estrutura de um module
+``` 
 Exemplo:
 /aluno/
     aluno.routing.module.ts
@@ -51,3 +55,4 @@ Exemplo:
     /aluno-table/
         aluno-table.component.ts
         aluno-table.component.html
+```
