@@ -3,8 +3,8 @@
     <a href="#" class="brand-logo">Estudo de rotas</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a routerLinkActive="active" routerLink="/login">Login</a></li>
-      <li><a routerLinkActive="active" routerLink="/curso">Curso</a></li>
-      <li><a routerLinkActive="active" routerLink="/aluno" >Aluno</a></li>
+      <li><a *ngIf="authenticated" routerLinkActive="active" routerLink="/curso">Curso</a></li>
+      <li><a *ngIf="authenticated" routerLinkActive="active" routerLink="/aluno" >Aluno</a></li>
     </ul>
   </div>
 </nav>

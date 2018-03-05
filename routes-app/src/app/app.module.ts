@@ -6,6 +6,8 @@ import {HomeComponent} from "./home/home.component";
 import {AppRoutingModule} from "./app.routing.module";
 import {AlunoModule} from "./aluno/aluno.module";
 import {CursoModule} from "./curso/curso.module";
+import {AuthService} from "./login/auth.service";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,13 @@ import {CursoModule} from "./curso/curso.module";
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     CursoModule,
     AlunoModule
+  ],
+  providers: [
+    AuthService,
   ],
   bootstrap: [AppComponent]
 })
